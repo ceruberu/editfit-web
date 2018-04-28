@@ -1,16 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Home.css";
 
 import exampleImage from "../images/exampleLook1.png";
 import bigExample from "../images/bigExample.jpg";
 
 const Home = () => {
-  return [
+  return (
     <main className="App-main" role="main">
       <section className="main-row">
         <div className="card-feed">
-          <article className="card">
+          <article className="card" key="1">
             <header className="card-header">
               <div className="card-display">
                 <img className="card-displayPhoto" alt="display" />
@@ -55,7 +54,7 @@ const Home = () => {
             </div>
           </article>
 
-          <article className="card">
+          <article className="card" key="2">
             <header className="card-header">
               <div className="card-display">
                 <img className="card-displayPhoto" alt="display" />
@@ -101,11 +100,8 @@ const Home = () => {
           </article>
         </div>
       </section>
-    </main>,
-    <Link to="/post" className="addButton">
-      +
-    </Link>
-  ];
+    </main>
+  );
 };
 
 export default Home;
