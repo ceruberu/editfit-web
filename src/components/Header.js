@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+import "./Header.css";
+
 const Header = () => {
   return (
     <nav className="App-nav">
@@ -9,9 +11,9 @@ const Header = () => {
         <div className="nav-logo">
           <span>edit.fit</span>
         </div>
-        <div className="nav-search">
-          검색
-        </div>
+        <form className="nav-search">
+          <input className="nav-searchInput" type="text" placeholder="태그검색"/>
+        </form>
         <div className="nav-navigation">
           <div className="navigation-container">
             <NavLink to="/" exact className="navigation-menu">데일리룩</NavLink>

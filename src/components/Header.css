@@ -1,0 +1,14 @@
+
+.nav-searchInput {
+  box-sizing: border-box;
+  border: none;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  color: #999;
+}
+
+.nav-searchInput:focus {
+  outline: none;
+}

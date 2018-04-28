@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 import exampleImage from "../images/exampleLook1.png";
 import bigExample from "../images/bigExample.jpg";
 
 const Home = () => {
-  return (
+  return [
     <main className="App-main" role="main">
       <section className="main-row">
         <div className="card-feed">
@@ -100,8 +101,11 @@ const Home = () => {
           </article>
         </div>
       </section>
-    </main>
-  );
+    </main>,
+    <Link to="/post" className="addButton">
+      +
+    </Link>
+  ];
 };
 
 export default Home;

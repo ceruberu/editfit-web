@@ -57,11 +57,10 @@
   align-items: center;
   border: solid 1px #dbdbdb;
   border-radius: 3px;
-  background: #fafafa;
   min-width: 130px;
   width: 215px;
   height: 28px;
-  color: #999;
+  overflow: hidden;
 }
 
 .nav-navigation {
