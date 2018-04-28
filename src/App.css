@@ -1,28 +1,173 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+ 
 .App {
-  text-align: center;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App-nav {
+  display: flex;
+  width: 100%;
+  height: 77px;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(0,0,0,.0975);
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.App-main {
+  flex: 1;
+  position: relative;
+  display: flex;
+  background-color: #fafafa;
 }
 
-.App-title {
-  font-size: 1.5em;
+.nav-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1010px;
+  height: 77px;
+  padding: 26px 40px;
 }
 
-.App-intro {
-  font-size: large;
+.nav-logo {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.nav-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #dbdbdb;
+  border-radius: 3px;
+  background: #fafafa;
+  min-width: 130px;
+  width: 215px;
+  height: 28px;
+  color: #999;
+}
+
+.nav-navigation {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.navigation-container {
+  display: flex;
+  padding-left: 24px;
+}
+
+.navigation-menu {
+  cursor: pointer;
+}
+
+.navigation-menu:not(:first-child) {
+  margin-left: 30px;
+}
+
+.main-row {
+  padding-top: 60px;
+  width: 100%;
+  max-width: 935px;
+  margin: 0 auto;
+}
+
+.card-feed {
+  width: 100%;
+  max-width: 614px;
+}
+
+.card {
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+}
+
+.card-header { 
+  display: flex;
+  height: 60px;
+  padding: 16px;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 1px solid #efefef;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-display {
+  box-sizing: border-box;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 30px;
+  width: 30px;
+}
+
+.card-displayPhoto {
+  height: 30px;
+  width: 30px;
+}
+
+.card-info {
+  margin-left: 12px;
+}
+
+.card-uploader {
+  font-size: 11px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-tags {
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-picture {
+  height: 400px;
+  position: relative;
+}
+
+.card-body {
+  padding: 0 16px;
+}
+
+.card-createdAt {
+  line-height: 18px;
+  color: #999;
+  font-size: 10px;
+  letter-spacing: .2px;
+}
+
+.comment-form {
+  box-sizing: border-box;
+  border-top: 1px solid #efefef;
+  margin-top: 4px;
+  padding: 16px 0;
+}
+
+.comment-area {
+  font-size: inherit;
+  width: 100%;
+  border: 0;
+  resize: none;
+  height: 18px;
+  line-height: 18px;
+  max-height: 80px;
+}
+
+.comment-area:focus {
+  outline: none;
 }
